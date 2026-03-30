@@ -6,7 +6,7 @@ You can view and run the full implementation of this project using Google Colab:
 
 ---
 
-# 📘 Image Classification Activity 3 - Reflection
+# 📘 Custom Image Classification Activity 3 - Reflection
 
 ## 1. Dataset Preparation
 
@@ -58,7 +58,7 @@ The system can be integrated by converting the trained model into a deployable f
 
 ---
 
-# 📘 Image Classification Activity 3A - Reflection
+# 📘 Custom Image Classification Activity 3A - Reflection
 
 ## Visualization & Overfitting
 

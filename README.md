@@ -50,17 +50,17 @@ Data augmentation helps by creating more variations of images like flipping or r
 
 ## 5. Application
 
-**Suggest a real-world application for your trained model.**  
+**Suggest a real-world application for your trained model.**
 A real-world application of this model is in environmental monitoring and coastal management. It can be used to automatically identify beach plant species, which helps in tracking biodiversity, detecting invasive species, and supporting conservation efforts in coastal areas.
 
-**How can this system be integrated into a mobile or web application?**  
+**How can this system be integrated into a mobile or web application?**
 The system can be integrated by converting the trained model into a deployable format such as TensorFlow Lite or TensorFlow.js. In a mobile app, users can use the camera to capture plant images and get real-time predictions. In a web application, users can upload images, and the model processes them on the backend or directly in the browser to classify the plant species.
 
 ---
 
 # 📘 Image Classification Activity 3A - Reflection
 
-**Visualization & Overfitting**
+## Visualization & Overfitting
 
 **1. What signs indicated overfitting in your first model?**
 In my first model (without data augmentation), there were clear signs of overfitting. The training accuracy increased very high, reaching about 99%, while the validation accuracy stayed much lower at around 54%. This large gap shows that the model was learning the training data too well but could not perform well on new data. Also, the training loss kept decreasing until it was almost 0, but the validation loss started to increase after a few epochs. This means the model was getting better on training data but worse on validation data. These patterns clearly show that the model was memorizing the training images instead of learning general features of the coastal beach plants.
@@ -70,7 +70,7 @@ After applying data augmentation, the validation accuracy improved from around 5
 
 ---
 
-**Model Improvement**
+## Model Improvement
 
 **3. What is the purpose of dropout layers?**
 The purpose of dropout layers is to reduce overfitting. During training, dropout randomly turns off some neurons in the network. This prevents the model from depending too much on specific features or patterns in the training data. Because of this, the model is forced to learn more general and useful features, which improves its performance on unseen data.
@@ -80,7 +80,7 @@ Data augmentation improves generalization by increasing the diversity of the dat
 
 ---
 
-**Performance Comparison**
+## Performance Comparison
 
 **5. Compare accuracy before and after improvements.**
 Before using data augmentation, the model had very high training accuracy (~99%) but low validation accuracy (~54%), which shows overfitting. After applying data augmentation, the training accuracy decreased to about ~64%, but the validation accuracy improved to around 60–61%. Even though the training accuracy became lower, the validation accuracy increased, which is more important because it shows better performance on unseen data. This comparison shows that the improved model is more balanced and generalizes better.
@@ -89,8 +89,7 @@ Before using data augmentation, the model had very high training accuracy (~99%)
 The technique that contributed the most to improvement was data augmentation. It significantly reduced overfitting by lowering the gap between training and validation accuracy. It also increased validation accuracy and made the model more stable during training. Compared to the first model, data augmentation had the biggest impact in helping the model learn general features of coastal beach plants instead of memorizing the training data.
 
 ---
-
-**Deployment & Application**
+## Deployment & Application
 
 **7. Why is saving the model important?**
 Saving the model is important because it allows us to reuse the trained model without training it again. Training a model takes a lot of time and computing power, so saving it helps us avoid repeating that process. It also allows the model to be used later for prediction, shared with others, or deployed into real-world applications. For example, once the model for coastal beach plants is saved, it can be loaded anytime to classify new plant images without retraining.
